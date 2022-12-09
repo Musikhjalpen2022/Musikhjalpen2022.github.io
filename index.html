@@ -1,127 +1,106 @@
 <!DOCTYPE html>
 <html>
-
-<style> 
-*
-{
-    margin-left:20px;
+<head>
+<title>Välkommen till Musikhjälpen 2022</title>
+<style type="text/css">
+body{
+  font-family: Arial;
 }
-pic {
-    margin-right:20px;
-    margin-left:unset;
+li{
+  margin-bottom: 1em;
 }
-p, a
-{
-    width:500px; 
-    word-wrap:break-word;
-    font-size:120%;
+img{
+  max-width: 500px;
+}
+#container{
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
 }
 </style>
+</head>
 <body>
+<div id="container">
 <h1>Välkommen till Musikhjälpen 2022</h1>
-<p>
-Innan vi går igenom hur du installerar modifikationerna för att kunna uppleva den virtuella
-musikhjälpen fullt ut vill vi att du säkertställer att du har en fungerande version av 
-Minecraft java edition installerat på din dator. Vilken version du spelat på innan spelar
-ingen roll, bara att du startat spelat innan.
-</p>
-<p>
-Vi vill också förtydliga att du kan delta i den virtuella Musikhälpen-upplevelsen utan
-att göra följande steg, utan att använda mods. Då kommer du dock inte kunna se Live-streamen
-från buren på den stora skärmen eller röstchatta med någon av de andra deltagarna/besökarna.
-Om du inte vill installera några mods kan du hoppa direkt till "Anslut till Servern" längre 
-ned på sidan.
-</p>
+
+<p>Om du inte redan har Minecraft på din dator, köp och installera det från Microsoft Store eller från <a href="https://www.minecraft.net" target="_blank">www.minecraft.net</a></p>
+
+<p>Nedan följer instruktioner för att installera modifikationerna manuellt, det finns även ett enklare sätt med ett program som heter Curseforge, du kan hitta instruktioner och annan information om eventet här: <a href="https://visualsweden.se/mh22" target="_blank">visualsweden.se/mh22</a></p>
+
+<p>Du kan så klart logga in på servern utan moddar, men kommer då inte kunna se streamen eller röstchatta med de andra deltagarna. Se <a href="#connect">"Anslut till Servern"</a> här nedanför.</p>
 
 <h2>Installera mods</h2>
-<p>
-Instruktionerna nedan kan se långa ut, men de är skrivna så att alla, även
-helt fräscha nybörjare, ska kunna förstå och följa alla steg utan att
-förhoppningsvis fastna. Det finns även ett enklare alternativ att installera curseforge och ladda ner
-ett modpack under namnet musikhjälpen, instruktionsvideo för detta kommer snart.
-</p>
 
-<p>Första steget är att ladda ner följande zip-fil:
-</p>
-<a href=https://minecraftbibliotek.blob.core.windows.net/minecraft/SVT-mods.zip>Ladda ner zip</a>
-<p>
-Notera att när " används nedan så är det för att markera nyckelord, dessa skall
-aldrig inkluderas när du letar eller söker efter fält, mappar eller filer.
-</p>
-<p>
-I zippen hittar du de två olika installationerna som behöver göras.
-Börja med att dubbelklicka på "fabric-installer" och se till att
-"client" är valt uppe i vänstra hörnet, INTE "server". I "Minecraft Version"
-väljer du "1.19.2" och i "Loader Version" väljer du senaste tillgängliga,
-eller förslagsvis "0.14.10". Dessa bör vara ifyllda redan, annars leta upp dom i listorna själv. 
-Klicka sedan "Install" längst ned i fönstret och
-låt den arbeta färdigt. Klicka på "Ok".
-<img src="fabric_installer.png"> 
-</p>
+<p>Instruktionerna nedan kan se långa ut, men de är skrivna för att vara så tydliga som möjligt och ge en steg-för-steg instruktion så du förhoppningsvis inte fastnar.</p>
 
-<p>
-Nästa steg är att lägga till modfilerna i minecraft. Detta görs enklast genom
-att klicka på windows-knappen på tangenbordet längst ned till vänster.
-I sökrutan skriver du "%appdata%" och enter. Du bör få upp ett nytt fönster
-med utforskaren. 
+<ol>
+<li>Ladda ner den här .zip.filen: <a href="https://minecraftbibliotek.blob.core.windows.net/minecraft/SVT-mods.zip" target="_blank">Ladda ner zip</a></li>
+<li>Öppna filen och dubbelklicka på <strong>fabric-installer</strong><br>
+Se till att <strong>Client</strong> är valt uppe i vänster hörn. <br>
+I Minecraft version väljer du <strong>1.19.2</strong><br>
+I Loader version väljer du <strong>senast tillgängliga</strong> eller <strong>0.14.10</strong><br>
+Klicka sen <strong>Install</strong><br>
+<img src="fabric_installer.png">
+</li>
+
+<li>Efter detta behöver du lägga till modfilerna i Minecraft. 
+Tryck på Windows-knappen längst ner till vänster på ditt tangentbord
+I sökrutan skriver du <strong>%appdata%</strong> och sen Enter
+Dubbelklicka på mappen .minecraft
+Om det finns en mapp som heter mods så kopierar du över filerna till den, om den saknas så drar du över hela mods-mappen från .zipfilen</li>
+
+</ol>
+
 <img src="appdata.png">
-Relativt högt upp i listan av mappar och filer bör du se 
-en mapp som heter ".minecraft". Dubbelklicka på den. Om du inuti denna mapp
-har en mapp som heter "mods" ska du dra över innehållet från "mods"-mappen inuti
-zippen till denna mapp. Har du ingen "mods" i ".minecraft" kan dra över hela 
-"mods"-mappen från zippen till ".minecraft".
 <img src="dotmine.png">
 <img src="modsfold.png">
-</p>
-<p>
-Nu har du installerat allt som krävs. Nu när du startar upp minecraft och kommer in
-launchern bör du se längst ned till vänster något i stil med "fabric-loader-1.19.2". Om inte,
-klicka på pilen bredvid minecraft-versionen och leta upp versionen skriven ovan. Om du inte hittar
-någon version med "fabric" i namnet bör du läsa igenom installations-instruktionerna
-en gång till och se om du missat något steg.
+
+
+<p>Nu har du installerat allt som krävs. </p>
+
+<p>När du startar Minecraft bör du se att det står "fabric-loader-1.19.2" längst ner till vänster. Om det inte gör det kan du klicka på den lilla nedåtpilen för att välja den.</p>
+
 <img src="minecraft_version.png">
+
+<h2 id="connect">Anslut till Servern</h2>
+
+<p>Klicka på Multiplayer, sen på Add Server<br>
+Under Server Adress skriver du <strong>mh.aroundthecorner.se</strong><br>
+Klicka på Done och då ser du servern i listan samt hur många användare som är inloggade. <br>
+Dubbelklicka på Servern för att logga in. 
 </p>
 
-<h2>Anslut till Servern</h2>
-<p>
-När du har startat Minecraft 1.19.2 (med eller utan mods) ansluter du 
-genom att gå in på "Multiplayer", klicka på "Add Server" och under
-"Server Address" mata in "mh.aroundthecorner.se". Klicka på "done" och
-du bör sedan kunna se servern i listan och hur många användare som just
-nu är inne. Dubbelklicka på servern i listan och om allt gått korrekt bör
-du komma in till Kungstorget i Göteborg och känna kärleken flöda.
-</p>
 
-<h2>Inställningar i spelet</h2>
-<p>Inuti spelet finns framförallt två stycken knappar att hålla koll på. Med "R" kan du
-    ändra inställningar för streamen. Dra i slidern för att justera volymen av streamen
-    och du tycker steamen är laggig kan det hjälpa att ändra upplösning med "Resolution"
-    längst ned i menyn.
-</p>
-<p>Andra knappen att känna till är "V". "V" öppnar menyn för voice chat och dess
-    inställningar. Första menyn tillåter dig att tysta alla andra spelare med hjälp 
-    av hörlursknappen. Mikrofonknappen stänger av din mikrofon så att andra inte hör dig.
-</p>
+<h2>Inställningar för tilläggsprogrammen</h2>
+
+<p>För att ändra inställningar i modden för livestream: <strong>tryck på R</strong>. Här kan du ändra volymen genom att <strong>dra i slidern</strong> och även ändra upplösningen med knappen <strong>"Resolution"</strong> längst ner i menyn. </p>
+<p><strong>För att ställa in modden för Voice Chat trycker du på "V"</strong></p>
 <img src="voicechat1.png">
-<p>
-    "Settings" tar dig vidare till nästa skärm. SUPERVIKTIGT är att voicechat är inställt
-    på "Push to Talk" som standard. Klicka på den för att ändra till att du alltid hörs.
-</p>
+
+<ul>
+<li>Knappen med mikrofonen slår av och på din egen mikrofon</li>
+<li>Knappen med högtalaren gör att du kan stänga av och på ljudet från de andra spelarna</li>
+</ul>
+
+<p><strong>Om du klickar på Settings kommer du till den här skärmen. Här kan du göra olika inställningar för volym och annat.</strong></p>
+
 <img src="voicechat2.png">
-<p>
 
-</p>
+<p>Observera de två knapparna längst ner där du kan välja vilken mikrofon du ska använda och även vilken högtalare.</p>
+
+<p>En viktig sak är att "Push to Talk" är inställt som Default och du måste då hålla in Caps Lock när du vill prata. Det enklaste är att klicka på den och ändra till "Voice", så känner den automatiskt av när du pratar.</p>
 
 
-<h3>Har du problem?</h3>
-<p>Fungerar inte Musikhjälpen-streamen? Dubbelkolla att du följt instruktionerna
-för installationen korrekt.
-</p>
-<p>
-    Har andra användare problem att höra dig? Dubbelkolla att din mikrofon inte
-    är avstängd (enligt tidigare instruktion). Är din röst svag eller "hackig"
-    för andra spelare? Testa att höja "microphone gain" och sänka "Voice activation threshold"
-</p>
-<img src="voicechat3.png">
+
+<h2>Tips och Felsökning</h2>
+
+<ul>
+<li>Röst-chatten kommer att vara aktiverad mellan 16-22 samtliga dagar som musikhjälpen sänds på SVT.</li>
+<li>Om andra användare inte kan höra dig, dubbelkolla att du har rätt mikrofon inställd under "SelectMicrophone", kontrollera även att ikonen för mikrofonen inte är överkryssad.</li>
+<li>Om din röst är svag eller hackar kan du prova att höja "Microphone Gain", dvs volymen för din mikrofon och sänka "Voice Activation Threshold", dvs hur högt du behöver prata för att mikrofonen ska aktiveras.</li>
+<li>Om du upplever att streamen laggar eller hackar kan du prova att trycka R och sen välja "Resolution", där kan du ändra till en lägre upplösning.</li>
+</ul>
+</div>
+
 </body>
 </html>
